@@ -19,7 +19,7 @@ const Search = ({events,q}) => {
         <div className="events pt-40">
         <Row className='events_box flex justify-evenly'>
           {filterEvents?.map((event,i)=>(
-            <Col xs={24} sm={12} lg={6} className='eventCard mt-5'>
+            <Col xs={24} sm={12} lg={6} key={event._id} className='eventCard mt-5'>
                 <EventCard key={event._id} post={event} />
             </Col>
           ))}
