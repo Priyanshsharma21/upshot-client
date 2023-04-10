@@ -18,7 +18,7 @@ const EventCard = ({post}) => {
         }
       })
 
-    },[]);
+    },[likes]);
   
     const handleLike = async (event, post) => {
       event.preventDefault();

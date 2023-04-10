@@ -17,7 +17,7 @@ const initialState = {
   photo : '',
 }
 
-const auth = () => {
+const Auth = () => {
   const introImgRef = useRef()
   const introTitleRef = useRef()
   const formRef = useRef()
@@ -280,7 +280,7 @@ const auth = () => {
   )
 }
 
-export default auth
+export default Auth
 
 
 

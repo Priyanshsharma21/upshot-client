@@ -5,7 +5,7 @@ import { Spin } from 'antd'
 import { useRouter } from 'next/router'
 import Cookies from 'js-cookie'
 
-const userdetails = ({user}) => {
+const Userdetails = ({user}) => {
   const [formData, setFormData] = useState({
     name : user.name,
     email : user.email,
@@ -80,7 +80,7 @@ const userdetails = ({user}) => {
   )
 }
 
-export default userdetails
+export default Userdetails
 
 export async function getServerSideProps(context){
   try {

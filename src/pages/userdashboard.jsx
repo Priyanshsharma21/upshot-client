@@ -3,7 +3,7 @@ import cookie from 'cookie'
 import Link from 'next/link'
 
 
-const userdashboard = () => {
+const Userdashboard = () => {
   const [userDetails, setUserDetails] = useState([])
 
 
@@ -35,6 +35,6 @@ const userdashboard = () => {
   )
 }
 
-export default userdashboard
+export default Userdashboard
 
 

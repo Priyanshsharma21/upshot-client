@@ -4,7 +4,7 @@ import axios from 'axios'
 import { EventCard } from '@/components'
 import { Col, Row } from 'antd'
 
-const search = ({events,q}) => {
+const Search = ({events,q}) => {
     const [filterEvents, setFilterEvents] = useState([])
 
     useEffect(() => {
@@ -29,7 +29,7 @@ const search = ({events,q}) => {
   )
 }
 
-export default search
+export default Search
 
 export async function getServerSideProps(context){
     try {
